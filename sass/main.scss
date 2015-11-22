@@ -1,4 +1,4 @@
-@import "compass/reset";
+ @import "compass/reset";
 @import "../bourbon/bourbon";
 @import "../neat/neat";
 @import "compass/css3";
@@ -1030,7 +1030,7 @@ body { color: grey; font-family: 'Quicksand', sans-serif; }
   }
 
   .images-wrapper {
-    @include background(url('../images/ducky.png'), linear-gradient($side-image-background-top, $side-image-background-bottom), no-repeat $side-image-background-top scroll);
+    @include background(url('../images/yacht-05-mid.png'), linear-gradient($side-image-background-top, $side-image-background-bottom), no-repeat $side-image-background-top scroll);
     background-color: $side-image-background-top;
     background-size: cover;
     border-bottom: $side-image-border;
@@ -1040,7 +1040,7 @@ body { color: grey; font-family: 'Quicksand', sans-serif; }
 
     @include media($large-screen) {
       @include span-columns(4);
-      background-position: bottom;
+      background-position: -400;
       background-size: cover;
       border-right: $side-image-border;
     }
