@@ -1,0 +1,325 @@
+html
+  head
+  link(rel='stylesheet', href='./stylesheets/main.css')
+  link(rel='stylesheet', href='./stylesheets/datepicker.css')
+  link(rel='stylesheet', href='./stylesheets/buttons.css')
+  script(src='./bower_components/jquery/dist/jquery.min.js') 
+  script(src='http://cdnjs.cloudflare.com/ajax/libs/pickadate.js/3.5.3/picker.js')
+  script(src='http://cdnjs.cloudflare.com/ajax/libs/pickadate.js/3.5.3/picker.date.js')
+  script(src='./javascript/main.js')
+  script(src='./javascript/datepicker.js')
+
+  body
+    header.navigation(role='banner')
+      .navigation-wrapper
+        a.logo(href='javascript:void(0)')
+          img(src='https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png', alt='Logo Image')
+        a#js-mobile-menu.navigation-menu-button(href='javascript:void(0)') MENU
+        nav(role='navigation')
+          ul#js-navigation-menu.navigation-menu.show
+            li.nav-link
+              a(href='javascript:void(0)') About Us
+            li.nav-link
+              a(href='javascript:void(0)') Charters
+            li.nav-link
+              a(href='javascript:void(0)') Destinations
+        .navigation-tools
+          ul#js-navigation-menu.navigation-menu.show
+            li.nav-link
+              a(href='javascript:void(0)') Logout
+    .hero
+      .hero-inner
+        a.hero-logo(href='')
+          img(src='https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png\
+          ', alt='Logo Image')
+        .hero-copy
+          h1 Welcome to QUEROSS
+          p The new way to quickly and easily choose your yacht charter with accurate and transparent pricing. 
+    .search
+      .dropdown
+        .dropdown-container
+          p.dropdown-description Sort By
+          p.dropdown-button Number of Guests
+          ul.dropdown-menu.dropdown-select
+            li Length
+            li Number of Guests
+            li Weekly Rate
+      .dropdown
+        .dropdown-container
+          p.dropdown-description Destinations
+          p.dropdown-button Caribbean
+          ul.dropdown-menu.dropdown-select
+            li Caribbean
+            li Another Item
+            li Item Three
+            li The Last One
+      .button-container
+        a.button.button-rounded.button-flat-primary(href='#boats') Book Now
+    a(name='boats', style='margin-top: 5px;')
+    .cards
+      .card
+        .card-image
+          img(src='./images/yacht-01-mid.png', alt='')
+        .card-header
+          | The Jolly Roger
+        .card-copy
+          p Rates from 140,000$ per week
+          p Built: 2000
+          p Length: 120ft
+          p Passengers: 12
+      .card
+        .card-image
+          a(href='#calendar')
+            img(src='./images/ducky.png', alt='')
+        .card-header
+          | Ducky
+        .card-copy
+          p Rates from 150,000$ per week
+          p Built: 2005
+          p Length: 160ft
+          p Passengers: 20
+      .card
+        .card-image
+          img(src='./images/yacht-02-mid.png', alt='')
+        .card-header
+          | Santa Maria
+        .card-copy
+          p Rates from 120,000$ per week
+          p Built: 1999
+          p Length: 120ft
+          p Passengers: 15
+    .cards
+      .card
+        .card-image
+          img(src='./images/yacht-03-mid.png', alt='')
+        .card-header
+          | Mayflower
+        .card-copy
+          p Rates from 100,000$ per week
+          p Built: 2001
+          p Length: 100ft
+          p Passengers: 10
+      .card
+        .card-image
+          img(src='./images/yacht-04-mid.png', alt='')
+        .card-header
+          | Serenity
+        .card-copy
+          p Rates from 190,000$ per week
+          p Built: 2008
+          p Length: 150ft
+          p Passengers: 12
+      .card
+        .card-image
+          img(src='./images/yacht-05-mid.png', alt='')
+        .card-header
+          | Seas the Day
+        .card-copy
+          p Rates from 140,000$ per week
+          p Built: 2001
+          p Length: 120ft
+          p Passengers: 12
+    
+    .pagination
+      ul
+        li.page-prev
+          a(href='javascript:void(0)') Prev
+        li
+          ul
+            li
+              a(href='javascript:void(0)') 1
+            li
+              a(href='javascript:void(0)') 2
+            li
+              a(href='javascript:void(0)') 3
+            li
+              a(href='javascript:void(0)') 4
+        li.page-next
+          a(href='javascript:void(0)') Next
+    div
+      a(name='calendar')
+    .datepickers
+      fieldset
+        input#input_from(type='text', placeholder='Start Date', value='10 December, 2015')
+      fieldset
+        input#input_to(type='text', placeholder='End Date', value='21 December, 2015')
+    .book
+      a.button.button-rounded.button-flat-primary(href='#purchase') Book Trip
+      
+    .legend
+      .booked 
+        span
+        | Booked
+      .mine 
+        span
+        | My Reservation
+    .calendar
+      h1.month December 2015
+      ol.day-names
+          li Sunday
+          li Monday
+          li Tuesday
+          li Wednesday
+          li Thursday
+          li Friday
+          li Saturday
+      ol.days
+          li
+              .date 1
+              .event.booked.extend &nbsp;
+          li
+              .date 2
+              .event.booked.end Booked
+          li
+              .date 3
+          li
+              .date 4
+          li
+              .date 5
+          li
+              .date 6
+          li
+              .date 7
+          li
+              .date 8
+          li
+              .date 9
+          li
+              .date 10
+              .event.all-day.begin My Reservation
+          li
+              .date 11
+              .event.all-day.extend &nbsp;
+          li
+              .date 12
+              .event.all-day.extend &nbsp;
+          li
+              .date 13
+              .event.all-day.extend &nbsp;
+          li
+              .date 14
+              .event.all-day.extend &nbsp;
+          li
+              .date 15
+              .event.all-day.extend &nbsp;
+          li
+              .date 16
+              .event.all-day.extend &nbsp;
+          li
+              .date 17
+              .event.all-day.extend &nbsp;
+          li
+              .date 18
+              .event.all-day.extend &nbsp;
+          li
+              .date 19
+              .event.all-day.extend &nbsp;
+          li
+              .date 20
+              .event.all-day.end &nbsp;
+          li
+              .date 21
+          li
+              .date 22
+          li
+              .date 23
+          li
+              .date 24
+          li
+              .date 25
+          li
+              .date 26
+          li
+              .date 27
+          li
+              .date 28
+          li
+              .date 29
+          li
+              .date 30
+          li
+              .date 31
+          li.outside
+              .date 1
+          li.outside
+              .date 2
+          li.outside
+              .date 3
+          li.outside
+              .date 4
+    a(name='purchase')
+    .side-image
+      .images-wrapper
+      .side-image-content
+        h1 Ducky
+        .content
+          div
+            h2 Specifications 
+            p Rates from 150,000$ per week
+            p Built: 2005
+            p Length: 160ft
+            p Passengers: 20
+          div
+            h2 Captain's Recommended Itinerary
+            p Destination: 
+              select
+                option British Virgin Islands
+                option Puerto Ric Hispañola
+                option St. Barts, St. John, St. Kitts
+            p Departure: December 10th, 2015 
+            p Return: December 21st, 2015
+        label Credit Card
+        input(type='text', size='21', placeholder='XXXX-XXXX-XXXX-1234', style='margin-top: 7px;')
+
+        input(type='checkbox' checked, style='margin: 20px 5px 20px 0') 
+        | By checking you agree to the terms and conditions.
+        .purchase
+          a.button.button-rounded.button-flat-primary(href='#receipt') Purchase
+    a(name='receipt')
+    .side-image.receipt
+      .side-image-content
+        h1 Ducky
+        .content
+          div
+            h2 Specifications 
+            p Rates from 150,000$ per week
+            p Built: 2005
+            p Length: 160ft
+            p Passengers: 20
+          div
+            h2 Itinerary
+            p Destination: British Virgin Islands
+            p Departure: December 10th, 2015 
+            p Return: December 21st, 2015
+    footer.footer(role='contentinfo')
+      .footer-logo
+        img(src='https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png', alt='Logo image')
+      .footer-links
+        ul
+          li
+            h3 Content
+          li
+            a(href='javascript:void(0)') About
+          li
+            a(href='javascript:void(0)') Contact
+          li
+            a(href='javascript:void(0)') Products
+        ul
+          li
+            h3 Follow Us
+          li
+            a(href='javascript:void(0)') Facebook
+          li
+            a(href='javascript:void(0)') Twitter
+          li
+            a(href='javascript:void(0)') YouTube
+        ul
+          li
+            h3 Legal
+          li
+            a(href='javascript:void(0)') Terms and Conditions
+          li
+            a(href='javascript:void(0)') Privacy Policy
+      hr
+      p
+        | Disclaimer area lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, nostrum repudiandae saepe.
